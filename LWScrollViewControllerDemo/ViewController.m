@@ -19,12 +19,14 @@
     
     //添加scrollView控件
     _scrollerView = [[UIScrollView alloc]initWithFrame:[UIScreen mainScreen].applicationFrame];
+    
     _scrollerView.contentMode = UIViewContentModeScaleToFill;
     [self.view addSubview:_scrollerView];
     
     //添加图片控件
     _imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"demo.png"]];
     [_scrollerView addSubview:_imageView];
+    
     //内容大小设置
     _scrollerView.contentSize = _imageView.frame.size;
     
