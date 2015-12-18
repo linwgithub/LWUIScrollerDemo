@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) UIScrollView *scrollerView;
+
+@property (strong, nonatomic) UIImageView *imageView;
+
 
 @end
 
