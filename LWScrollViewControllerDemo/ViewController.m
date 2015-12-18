@@ -27,12 +27,14 @@
     _imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"demo.png"]];
     [_scrollerView addSubview:_imageView];
     
+    
     //内容大小设置
     _scrollerView.contentSize = _imageView.frame.size;
     
     //缩放比例设置
     _scrollerView.minimumZoomScale = 0.6;
     _scrollerView.maximumZoomScale = 3.0;
+    
     //隐藏滚动条
     _scrollerView.showsHorizontalScrollIndicator=NO;
     _scrollerView.showsVerticalScrollIndicator=NO;
